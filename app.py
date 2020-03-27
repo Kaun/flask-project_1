@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-
+from data import tours
 app = Flask(__name__)
 
 
@@ -10,7 +10,7 @@ def route_index():
 
 @app.route('/depature/<depature>')
 def route_depature(depature):
-    return render_template("depature.html", depature=depature)
+    return render_template("depature.html", depature=depature, tours=tours)
 
 
 @app.route('/tour/<id>')
