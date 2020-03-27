@@ -15,7 +15,7 @@ def route_depature(depature):
 
 @app.route('/tour/<id>')
 def route_tour(id):
-    return render_template("tour.html", id=id)
+    return render_template("tour_1.html", id=id)
 
 @app.route('/test/<role>')
 def route_test(role):
